@@ -1,14 +1,63 @@
-#img-div {
-    background-image: url("lebronchalk.jpeg");
-    height: 800px;
-    width: 800px;
-    background-repeat: no-repeat
+#main {
+    background-color: #f5b041; 
+}
+.container {
+    background-color: #f5b041;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 4fr 1fr 1fr;
+    grid-template-areas:
+    ". h ."
+    ". q ."
+    ". i ."
+    ". t ."
+    "c c c"
 }
 
-#img-div:hover {
-    content: url("lebronchamp.jpg");
-    cursor: pointer;
-    height: 600px;
-    width: 800px;
-    background-repeat: no-repeat
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    background-color: #f5b041;   
+}
+
+
+.header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: navy;
+    grid-area: h;
+    text-align: center;
+    justify-content: start;
+    background-color: #f5b041;   
+}
+
+.quote{
+    grid-area: q;
+    background-color: #f5b041;   
+}
+
+.image {
+    grid-area: i;
+    background-color: #f5b041;   
+    font-family: 'Roboto', sans-serif;
+}
+
+.caption {
+    grid-area: t;
+    color: #722f37;
+    background-color: #f5b041;   
+}
+.content {
+    grid-area: c;
+    padding-bottom: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: Navy;
+    background-color: #f5b041
+    
+}
+#main {
+    background-color: #f5b041;   
 }
