@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Do you own Crypto?</p>
+        <form action="#" method="post" id="survey-form">
+
+           <label for="name" id="name-label">*Name:</label>
+           <input type="text" id="name" name="name" placeholder="Enter Your Name" required><br>
+            
+
+            <label for="email" id="email-label">*Email:</label>
+            <input type="email" name="email" id="email" class="email-label" placeholder="Enter your Email" required><br>
+
+            <label for="age" id="number-label">*Age:</label>
+            <input type="number" name="age" id="number" class="number-label" placeholder="Age" min="18" max="99" required><br>
+            
+            <label for="exchange">Favorite Exchange:</label>
+            <select name="exchange" id="dropdown">
+                <option value="binance">Binance</option>
+                <option value="coinbase">Coinbase</option>
+                <option value="kraken">Kraken</option>
+                <option value="Bithumb">Bithumb</option>
+            </select><br>
+            
+           <ul> Do you own crypto: <br>
+            <li><input type="radio" id="what" name="own" value="yes">
+            <label for="what">What is Crypto?</label><br>
+            </li>   
+            <li><input type="radio" id="nah" name="own" value="no">
+            <label for="nah">No</label><br>
+            </li>   
+            
+            <li><input type="radio" id="yas" name="own" value="totally">
+            <label for="yas">HELL Yeah</label><br>
+            </li>
+             </ul>
+
+
+            Which cryptos are your favorite? <br>
+            <input type="checkbox" name="crypto" value="bitcoin">Bitcoin<br>
+            <input type="checkbox" name="crypto" value="eth">Ethereum<br>
+            <input type="checkbox" name="crypto" value="ripple">Ripple<br>
+            <input type="checkbox" name="crypto" value="lite">Litecoin<br>
+            <input type="checkbox" name="crypto" value="doge">Dogecoin<br>
+
+            <textarea rows="4" cols="40">Enter your Comment here...
+            </textarea><br>
+            
+            <input type="submit" id="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form><br>
+
+
+
+    </div>
+</body>
+</html>
