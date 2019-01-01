@@ -1,0 +1,124 @@
+body { 
+    min-height: 100%; 
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+html { height: 100%; }
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 1.2em;
+    width: 100vw;
+    height: 100vh;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 50px 4r 50px;
+    grid-template-rows:  100px 50px 2fr;
+    grid-gap: 10px;
+    grid-template-areas:
+      ". header ."
+      ". des ."
+      "content content content "
+}
+
+
+.title{
+    text-align: center;
+}
+  
+.item1 {
+     background: LightSkyBlue;
+    grid-area: header;
+}
+  
+
+.item3 {
+    background: #6EA6E8;
+    grid-area: content;
+    display:grid; 
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      ". label choices ."
+      ". send send ."
+}
+
+.radio {
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+#fav {
+    margin-bottom: 75px;
+    margin-top: 10px;
+}
+
+#checkboxes{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.itemOne {
+    background:white;
+    grid-area: label;
+    text-align: end;
+    padding: 10px;
+}
+#hold {
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+.itemdes {
+      grid-area: des;
+      background: #6EA6E8;
+     color: #FF5900
+}
+
+#descrtiption {
+     font-size: 1.5em;
+     text-align: Center;
+}
+.itemTwo {
+    background: white;
+    grid-area: choices;
+    padding: 10px;
+    text-align: start;
+}
+  
+.itemThree{
+    grid-area: send;
+    justify-self: center;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+.button1 {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
