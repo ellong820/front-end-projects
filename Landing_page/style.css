@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: arial;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #313C74;
+}
+
+#header {
+    background-image: url("https://images.pexels.com/photos/374632/pexels-photo-374632.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+#header h1 {
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+#header p {
+    font-size: 20px;
+}
+/* NAV BAR */
+#nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-weight: 400;
+    background: rgba(124, 132, 174, .5);
+  }
+.main-nav {
+    display:flex;
+    list-style: none;
+    font-size: 1.2em;
+    margin: 0;
+  }
+
+@media only screen and (max-width:600px) {
+    .main-nav {
+    font-size: 0.8em;
+    padding: 0;
+    }
+}
+  
+.push {
+    margin-left: auto;
+}
+  
+li {
+    padding: 20px;
+}
+  
+a {
+    color: #313C74;
+    text-decoration:none;
+  }
+
+
+#submit {
+    font-size: 18px;
+    text-decoration: none;
+    color: #313C74;
+    border: #313C74 1px solid;
+    border-radius:10px;
+    padding: 10px 20px;
+}
+
+#submit:hover {
+    background: #313C74;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+#section-a {
+    padding:20px;
+    background: #7B83AE;
+    color:#fff;
+    text-align: center;
+}
+#section-b {
+    padding:20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+#section-c {
+    display: grid;
+    font-size: 20px;
+}
+#section-c div {
+    padding: 5px 20px;
+}
+
+#section-c .box-1, #section-c .box-3 {
+    background: #7B83AE;
+    color: #fff;
+    text-align: center;
+}
+
+#section-c .box-2{
+    background: #f9f9f9;
+    text-align: center;
+}
